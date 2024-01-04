@@ -13,7 +13,8 @@ public class App {
             
         }
 
-        // Process a file
+        // Process a file and print it to the console
+        // Wrap the file processing inside of a try-catch block
         try {
         
         File file = new File("stuff.txt");
@@ -29,6 +30,13 @@ public class App {
             // TODO: handle exception
         }
 
-        
+        MyFileUtils utils = new MyFileUtils();
+        try {
+            System.out.println(utils.Subtract10(9));
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }
