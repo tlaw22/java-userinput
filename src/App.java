@@ -1,3 +1,4 @@
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -10,22 +11,22 @@ public class App {
             Scanner input = new Scanner(System.in);
             String enterdText = input.nextLine();
             System.out.println(enterdText);
-            
+
         }
 
         // Process a file and print it to the console
         // Wrap the file processing inside of a try-catch block
         try {
-        
-        File file = new File("stuff.txt");
-        Scanner input = new Scanner(file);
-        while (input.hasNextLine()) {
-            String line = input.nextLine();
-            System.out.println(line);
 
-        }
-        input.close();
-    
+            File file = new File("stuff.txt");
+            Scanner input = new Scanner(file);
+            while (input.hasNextLine()) {
+                String line = input.nextLine();
+                System.out.println(line);
+
+            }
+            input.close();
+
         } catch (Exception e) {
             // TODO: handle exception
         }
@@ -39,4 +40,5 @@ public class App {
             e.printStackTrace();
         }
     }
+
 }
